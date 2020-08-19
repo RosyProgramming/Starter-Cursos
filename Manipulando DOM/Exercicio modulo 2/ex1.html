@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Excercicio</title>
+    </head>
+    <body>
+       
+            <button id="but">Quadrado</button>
+            <div id="quadro"></div>
+         <!--
+         Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado vermelho com 100px de altura e largura.
+         Sempre que o botão for clicado um novo quadrado deve aparecer na tela.
+        -->
+
+        <script>
+    
+            var btnElement = document.getElementById('but');
+            var quadroElement = document.getElementById('squares');
+        
+            btnElement.onclick = function(){
+                var squares = document.createElement('div');
+                quadro.style.width = '100px';
+                quadro.style.height = '100px';
+                quadro.style.backgroundColor = '#f08';
+        
+                quadroElement.appendChild(quadro);
+            };
+        
+           
+        </script>
+
+    </body>
+</html>

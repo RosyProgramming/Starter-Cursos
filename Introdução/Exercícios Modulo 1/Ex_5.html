@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício 5 </title>
+    <style>
+        body {
+        background-color: rgb(117, 96, 187);
+        }
+        h1,h2{
+        color:#fff;
+        padding: 15px;
+        }
+        </style>
+</head>
+
+
+<body>
+<script>
+   
+    // Dado o seguinte vetor de objetos:
+        var usuarios = [
+    {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+     },
+    {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+     }
+    ];
+
+    //Escreva uma função que produza o seguinte resultado:
+
+    //O Diego possui as habilidades: Javascript, ReactJS, Redux
+    //O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+    //Dica: Para percorrer um vetor você deve utilizar a sintaxe for...of e para unir valores de um array 
+    // com um separador utilize o join.
+
+   function mostrarHab(usuarios){
+        for (usuarios of usuarios) {
+            console.log("O","" +usuarios.nome, "possui habilidades:"+usuarios.habilidades.join(","));
+        }
+   }
+
+        console.log(mostrarHab(usuarios));
+
+</script>
+
+  <div>
+      <h1  style="text-align: center";>Curso de Javascript - Rocketseat</h1>
+      <h2 style="text-align: center";> Introdução JavaScript: <br>
+        &lowast; Variáveis e dados <br>
+        &lowast; Operações e matemáticas <br>
+        &lowast; funções  <br>
+        &lowast; condições <br>
+        &lowast; operadores lógicos <br>
+        &lowast; estrutura de repetição <br>
+
+      </h2>
+  </div>
+</body>
+</html>

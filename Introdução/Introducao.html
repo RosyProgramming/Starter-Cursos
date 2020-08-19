@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <script>
+            /* tipos de variaveis:
+            var nome = 'Rosana';
+            var idade = 23;
+            var peso = 45.1;
+            var humano = true;
+
+            var alunos = ['rosy', 'jak', 'maria'];
+
+            var aluno = {
+                nome: alunos[0],
+                idade: 23,
+                peso: 45.1,
+                humano: true
+            };
+
+            console.log(alunos[1]);
+            console.log(aluno.nome);
+            */
+           /* operações matemáticas:  podemos usar - x , +, -, / e % */ 
+            // x +=3; == x=x+3  console.log(x);
+            /*
+            var x = 10, y =5;
+
+            var resultado = x + y;
+
+            console.log(resultado);
+            */
+
+            // Criando uma função com javascript
+            /*
+            function soma(numero1,numero2){
+
+                var resultado = numero1 + numero2;
+
+                return resultado;
+
+            }
+
+            var resultado = soma(1,2);
+            console.log(resultado);
+            */
+
+            /*
+            function retornaSexo(sexo){
+                // M,F
+                // Masculino, Feminino
+
+                if (sexo === 'M'){
+                    return 'Masculino'
+                } else if (sexo ==='F') {
+                    return 'Feminino'
+                } else{
+                    return 'outro';
+                }
+            }
+            */
+            /*
+            function retornaSexo(sexo){
+               switch (sexo) {
+                   case 'M':
+                    return 'Masculino';
+                   case 'F':
+                    return 'Feminino';
+                   default:
+                    return 'outro';
+               }
+            }
+            var resultado = retornaSexo('F');
+            console.log(resultado);
+            */
+
+            //AND, OR, NOT
+
+         //   var sexo= 'M', idade = 23;
+
+/*
+            if (sexo === 'M' && idade >= 18) { //OR || 
+                console.log('OK');
+            }
+*/
+
+/*
+            if (sexo !== 'M'){   // NOT
+                console.log('OK!');
+            }
+*/
+/*
+            var masculino;
+
+            if (sexo == 'M') {
+                masculino = true;
+            } else {
+                masculino = false;
+            }
+*/
+/*
+            var sexo = 'F';
+
+            var masculino = (sexo == 'M');
+
+            console.log(masculino);
+*/
+            // condução ternária 
+           // var sexo ='M';
+           // var retorno = (sexo === 'M') ? 'Masculino': 'Feminino';
+           // console.log(retorno);
+
+           // for, while
+            /*
+           for (var i = 0; i <= 100; i++) {
+               console.log(i);
+           }
+           */
+           
+           
+           // var j = 0;
+           // while ( j <= 100) {
+              // console.log (j);
+
+                // j++;
+          /// }
+
+/*
+           var j = 219345872;
+           while (j > 50 ){
+               console.log(j);
+
+               j /= 5;
+           }
+
+*/
+
+           // intervalo e timeout
+           /*
+           function exibeAlgo() {
+               console.log('Hello world');
+
+           }
+
+           setInterval(exibeAlgo, 100);
+           */
+
+           // timeout
+           /*
+           function exibeAlgo() {
+               console.log('Hello World');
+           }
+           setTimeout(exibeAlgo,5000);
+*/
+        </script>
+    </body>
+</html>

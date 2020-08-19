@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <!--
+               definir um input, escolher um nome e criar um button 
+            -->
+            
+            <input type="text" name="nome" />
+            <button class="botao"> Adicionar </button>
+         </div>
+
+        <script>
+            
+            // Definir nome da variável: inputElement
+            // Usando várivel global que referencia a árvore de elementos. 
+            
+
+            //var inputElement = document.getElementById('nome');
+            //console.log(inputElement);
+
+            // geteElementsByTagName,  ele passa a tag q esta utilizando
+
+            // var inputElement = document.getElementsByTagName('input')[0];
+            // console.log(inputElement);
+
+            // getElementsByClassName
+            //var inputElement = document.getElementsByClassName('nome')[0];
+            //console.log(inputElement);
+
+            //querySelector encontrar o elemento 
+            // var inputElement = document.querySelector('input');
+            // console.log(inputElement);
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function () {
+                var text = inputElement.value;
+
+                alert(text);
+            }
+
+        </script>
+
+    </body>
+</html>
